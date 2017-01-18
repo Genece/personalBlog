@@ -1,0 +1,23 @@
+doctype
+html
+  meta(charset="UTF-8")
+  title= title
+  body
+    h1 Mobx学习手册
+    p @observer  将其设置为Observer来响应状态的变换
+    p @cumputed 注解即是表示该变量是可以从被观测值中推导而出，而不需要你手动触发判断的
+    p @observable 注解标注某个变量为被观测值，一旦某个被观测的变量发生了变化，即可以触发观测值相对应的响应。
+    p
+    h2 
+    code toJS(value, supportCycles = true)
+    p Converts observable data structures back to plain javascript objects, ignoring computed values
+    p 将观察到的数据结构，回到简单的JavaScript对象，忽略计算值
+    code var obj = mobx.observable({
+    code x: 1
+    code });
+    code var clone = mobx.toJS(obj);
+    code console.log(mobx.isObservableObject(obj)); // true
+    code console.log(mobx.isObservableObject(clone)); // false
+    p 在Fetch API中，最常用的就是fetch()函数。它接收一个URL参数，返回一个promise来处理response。response参数带着一个Response对象。
+    p promise:主要作用就是解决异步回调问题,Promise模式唯一需要的一个接口是调用then方法，它可以用来注册当promise完成或者失败时调用的回调函数,一个Promise对象代表着一个还未完成，但预期将来会完成的操作。Promise 对象是一个返回值的代理，这个返回值在promise对象创建时未必已知。它允许你为异步操作的成功或失败指定处理方法。 这使得异步方法可以像同步方法那值返回一个包含了原返回值的 promise 对象来替代原返回值。
+    p 如果上一个onFulfilled函数返回了一个普通的值，那么这个值为作为这个onFulfilled函数的入参；那么如果上一个onFulfilled返回了一个Promise变量，这个onFulfilled的入参又来自哪里？Promise.resolve :用成功值value解决一个Promise对象。如果该value为可继续的（thenable，即带有then方法），返回的Promise对象会“跟随”这个value，采用这个value的最终态否

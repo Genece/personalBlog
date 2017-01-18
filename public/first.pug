@@ -1,0 +1,32 @@
+doctype
+html
+  meta(charset="UTF-8")
+  title= title
+  body
+    h1 React 入门学习手册
+    p 最近因为项目的需要，强行段时间内学习一波react + redux + webpack,也就是准备发三篇入门笔记，react一篇，redux一篇，webpack＋gulp 一篇。鉴于之前已经花了点经历研究过webpack＋gulp，嗯，所以先来react入门学习手册。结合着react官网和阮大神的教程，先自己跑了一遍12个比较简单的demo（链接）。
+    h2 react简介
+    p 简介各种搜素引擎上一大堆，如果按我的理解的话就是：少用dom，多用component，单向数据流(此处可以对比angular和vue,参见demo)。使用JSX，遇到｛｝解析js，遇到<>解析html，我心目中撑起这个框架的几大关键词：render，createClass,props,state。
+    h2 一、安装
+    p 略。
+    h2 二、React JSX
+    h3 1、使用JSX
+    p 
+      code <scripe type=“text/babel”> 
+      code var i =1
+      code ReactDOM.render(
+      code  <div>
+      code  <h2 style={{color:pink,fontSize:16px}}>{i == 1 ? 'True!' : 'False'}</h2>
+      code  <p data-myattribute = "somevalue">这是一个很不错的 JavaScript 库!</p>
+      code  </div>,
+      code  document.getElementById(‘example’)
+      code  );
+      code  <script>
+    p 渲染页面后dom结构变为：
+      code <div id=“example”>
+      code  <div>
+      code  <h2 style=“color:pink,fontSize:16px”>true</h2>
+      code  <p data-myattribute = "somevalue">这是一个很不错的 JavaScript 库!</p>
+      code  </div>
+      code  </div>
+    p 所以简单点理解为
