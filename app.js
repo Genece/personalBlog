@@ -1,10 +1,12 @@
 var app = require('koa')();
 var router = require('koa-router')();
 var http = require('http');
+var koaStatic = require('koa-static-server');
+const path = require('path');
 
 const Pug = require('koa-pug');
 const pug = new Pug({
-  viewPath: './public',
+  viewPath: './views',
   debug: false,
   pretty: false,
   compileDebug: false,
@@ -14,6 +16,7 @@ const pug = new Pug({
 })
 pug.locals.someKey = 'some value'
 
+app.use(koaStatic({rootDir: path.join(__dirname, "/public"), rootPath: '/public'}));
 
 router.get('/index', function *(next) {
   this.render('index',{title:'首页'});
@@ -27,11 +30,15 @@ router.get('/second', function *(next) {
   this.render('second',{title:'第二篇'});
 });
 
+router.get('/typescript', function *(next) {
+  this.render('typescript',{title:'ts'});
+});
+
 app
   .use(router.routes())
   .use(router.allowedMethods());
 
-http.createServer(app.callback()).listen(8000);
+http.createServer(app.callback()).listen(8001);
 
 
 // var koaStatic = require('koa-static-server');
