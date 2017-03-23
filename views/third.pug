@@ -1,0 +1,325 @@
+html
+  head
+    meta(charset="utf-8")
+    link(href="css/facebook.css" rel="stylesheet")
+  body
+    .nav
+      .nav-bar
+        .logo-box
+          .logo
+          .search-box
+            input#sratch-inpt(placeholder="查找好友")
+            .search-btn
+              b
+            ul#search-list
+              p 近期搜索
+                span 编辑
+              -for(var i =0 ;i<10;i++)
+              li
+                img(src="http://kashow.oss-cn-shanghai.aliyuncs.com/images/safe_image.jpeg")
+                .intro
+                  .search-name 赵薇
+                  .tag
+                    span 公众人物 ·
+                    span 艺术家 ·
+                    span 17,471次赞
+
+        .operation-box
+          u
+            img.small-avatar(src="http://kashow.oss-cn-shanghai.aliyuncs.com/facebook/10354686_10150004552801856_220367501106153455_n.jpg" style="vertical-align:sub")
+            span.userName 张萌萌
+          u
+            span.rb 首页
+          u
+            span 搜索好友
+          ul#icon-bar
+            a
+              li
+            a
+              li.message
+            a
+              li.inform
+            a.rb(style="height:20px;vertical-align: super;width:10px")
+          .question
+            i#question
+            .arrow#arrow
+            .dropdown
+              ul
+                li 创建主页
+                li.line
+                li 创建小组
+                li 查找小组
+                li.line
+                li 创建广告
+                li Facebook广告
+                li.line
+                li 活动日志
+                li 动态消息偏好设置
+                li 设置
+                li 退出
+    .container
+      .menu
+        ul#avatar-menu
+          li
+            img(src="http://kashow.oss-cn-shanghai.aliyuncs.com/facebook/10354686_10150004552801856_220367501106153455_n.jpg")
+            span 张萌萌
+          li
+            i
+            span 动态消息
+          li
+            i.message(style="background-position:0 -319px")
+            span Messenger
+        h4 发现
+        ul#menu
+          -var items = [{name:'活动',position:''},{name:'小组',position:'0 -592px'},{name:'公共主页',position:'0 -802px'},{name:'好友名单',position:'0 -718px'},{name:'那年今天',position:'0 -781px'},{name:'打招呼',position:'0 -928px'},{name:'主页动态',position:'0 -823px'},{name:'照片',position:'0 -886px'},{name:'搜索好友',position:'0 -718px'},{name:'游戏',position:'0 -508px'}]
+          each item in items
+            if(item.name!='活动')
+              a(href='#')
+                i(style="background-position:" + item.position)
+                li= item.name
+            else
+              a(href='#')
+                i(style="background:url('http://oss.kashowvr.com/facebook/ENv5XT4UIOW.png') 0 -231px/auto no-repeat")
+                li= item.name
+          a.folder 展开...
+          .folder-content(style="display:none")
+            -var folders = [{name:'编辑建议',position:'0 -907px'},{name:'优惠',position:'0 -760px'},{name:'游戏动态',position:'0 -529px'},{name:'收藏夹',position:'0 -991px'},{name:'二手货小组',position:'-17px -1724px'},{name:'支付记录',position:'0 -865px'}]
+            each folder in folders
+              a(href='#')
+                i(style="background-position:" + folder.position)
+                li= folder.name
+        h4 创建
+        ul#create
+          a.li 广告·
+          a.li 主页·
+          a.li 小组·
+          a.li 活动
+      .content
+        .wrapper
+          .main
+            .public
+              .public-inner
+                .editBar
+                  span.ft
+                    i
+                    em 发帖
+                  span.photo
+                    i(style="background:url('http://oss.kashowvr.com/facebook/BO2nST9e5oa.png') 0 -1727px/auto no-repeat")
+                    em 照片/视频相册
+                  .closeBtn
+                .textBox
+                  img.avatar(src="http://kashow.oss-cn-shanghai.aliyuncs.com/facebook/10354686_10150004552801856_220367501106153455_n.jpg")
+                  textarea(placeholder="分享新鲜事")
+                .aditeMune
+                  span
+                    i.photoBtn
+                    | 照片/视频
+                  span.activity
+                    i
+                    | 感受/活动
+                  span.ignore
+                    i
+                    | ...
+                .mask-show
+                  .btnRow
+                    span
+                      i.sign
+                      | 签到
+                    span
+                      i.friend
+                      | 标记好友
+                  .publicbtn
+                    .float-r
+                      button.anncounce 公开
+                      button 发布
+            .box
+              -for(var i =0;i<10;i++)
+              .item-box
+                .item
+                  .info
+                    img.avatar(src="http://kashow.oss-cn-shanghai.aliyuncs.com/facebook/10354686_10150004552801856_220367501106153455_n.jpg")
+                    span.user 张萌萌
+                    time 46 分钟前 ·
+                      .inform-small
+                  .item-content I am here!
+                  .item-btn
+                    span 赞
+                    span.comment 评论
+                    span.share 分享
+                .reply-box
+                  .hadZan
+                    span 张萌萌
+                  .relpy
+                    img.avatar.relpy-avatar(src="http://kashow.oss-cn-shanghai.aliyuncs.com/facebook/10354686_10150004552801856_220367501106153455_n.jpg")
+                    .reply-info
+                      .row
+                        span.reply-user 张萌萌
+                        span.reply-content(style="padding-left:10px") Just test
+                      .row.reply-zan
+                        span 赞 ·
+                        span  回复 ·
+                        time  44分钟
+                  .relpy
+                    img.avatar.relpy-avatar(src="http://kashow.oss-cn-shanghai.aliyuncs.com/facebook/10354686_10150004552801856_220367501106153455_n.jpg")
+                    .reply-info
+                      input(placeholder="写评论")
+                      .photo-icon
+                      .emoji
+                  p 按Enter键发布
+              .item-box
+                .item
+                  .info
+                    img.avatar(src="http://kashow.oss-cn-shanghai.aliyuncs.com/facebook/10354686_10150004552801856_220367501106153455_n.jpg")
+                    span.user 张萌萌
+                    time 46 分钟前 ·
+                      .inform-small
+                  .item-content I am here!
+                  .item-btn
+                    span 赞
+                    span.comment 评论
+                    span.share 分享
+                .reply-box
+                  .hadZan
+                    span 张萌萌
+                  .relpy
+                    img.avatar.relpy-avatar(src="http://kashow.oss-cn-shanghai.aliyuncs.com/facebook/10354686_10150004552801856_220367501106153455_n.jpg")
+                    .reply-info
+                      .row
+                        span.reply-user 张萌萌
+                        span.reply-content(style="padding-left:10px") Just test
+                      .row.reply-zan
+                        span 赞 ·
+                        span  回复 ·
+                        time  44分钟
+                  .relpy
+                    img.avatar.relpy-avatar(src="http://kashow.oss-cn-shanghai.aliyuncs.com/facebook/10354686_10150004552801856_220367501106153455_n.jpg")
+                    .reply-info
+                      input(placeholder="写评论")
+                      .photo-icon
+                      .emoji
+                  p 按Enter键发布
+                .item-box
+                  .item
+                    .info
+                      img.avatar(src="http://kashow.oss-cn-shanghai.aliyuncs.com/facebook/10354686_10150004552801856_220367501106153455_n.jpg")
+                      span.user 张萌萌
+                      time 46 分钟前 ·
+                        .inform-small
+                    .item-content I am here!
+                    .item-btn
+                      span 赞
+                      span.comment 评论
+                      span.share 分享
+                  .reply-box
+                    .hadZan
+                      span 张萌萌
+                    .relpy
+                      img.avatar.relpy-avatar(src="http://kashow.oss-cn-shanghai.aliyuncs.com/facebook/10354686_10150004552801856_220367501106153455_n.jpg")
+                      .reply-info
+                        .row
+                          span.reply-user 张萌萌
+                          span.reply-content(style="padding-left:10px") Just test
+                        .row.reply-zan
+                          span 赞 ·
+                          span  回复 ·
+                          time  44分钟
+                    .relpy
+                      img.avatar.relpy-avatar(src="http://kashow.oss-cn-shanghai.aliyuncs.com/facebook/10354686_10150004552801856_220367501106153455_n.jpg")
+                      .reply-info
+                        input(placeholder="写评论")
+                        .photo-icon
+                        .emoji
+                    p 按Enter键发布
+
+
+
+          .promotion
+            .top
+              h3
+                span 推荐主页
+                span 全部
+              .picBox
+                .img
+                .img
+                .img
+                .img
+              .name Family Guy
+              .des 电视节目·
+                span 49,557,780 次赞
+              button.zan
+                i
+                | 赞主页
+            .bottom
+              .addBtn
+                .addicon
+              .language
+                span.active 中文(简体) ·
+                span English (US) ·
+                span Español ·
+                span Português (Brasil) ·
+                span Français (France)
+            .coperight
+              a 隐私权政策 ·
+              a 条款 ·
+              a 发布广告 ·
+              a 广告选项 ·
+              a Cookie ·
+              a 更多
+            p Facebook © 2017
+    .mask(style="display:none")
+    script(src="http://cdn.bootcss.com/jquery/3.1.1/jquery.min.js")
+    script.
+      function textFn(){
+        $('.mask').fadeIn('100');
+        $('.textBox').css('height', '107px');
+        $('.ignore').hide();
+        $('textarea').addClass('animate');
+        $('.aditeMune span').addClass('hasOpen');
+        $('.btnRow span').addClass('hasOpen');
+        $('.mask-show').show();
+        $('.closeBtn').show();
+      }
+      $(function(e){
+        $('textarea').on('focus', function () {
+          textFn();
+        });
+
+        $('.aditeMune span').on('click',function () {
+          textFn();
+        })
+
+        $('.closeBtn').on('click',function(){
+          $('.mask').fadeOut('100');
+          $('.textBox').css('height', '71px');
+          $('textarea').removeClass('animate');
+          $('.aditeMune span').removeClass('hasOpen');
+          $('.btnRow span').removeClass('hasOpen');
+          $('.ignore').show();
+          $('.mask-show').hide();
+          $('.closeBtn').hide();
+        })
+        $('.folder').on('click',function(){
+          $(this).hide();
+          $('.folder-content').show()
+        })
+        $('#sratch-inpt').on('focus',function(){
+          $('#search-list').show();
+        })
+        $('.question').on('click', function () {
+          $('.dropdown').show();
+        })
+        $('.arrow').on('click', function () {
+          $('.dropdown').show();
+        })
+        $('body').on('click',function(e){
+          console.log(e.target.id);
+          if(e.target.id !='search-list' && e.target.id !='sratch-inpt'){
+            $('#search-list').hide();
+          }
+          if(e.target.class!='question' && e.target.id!='question' && e.target.id!='arrow'){
+            $('.dropdown').hide();
+          }
+        })
+
+      })
+

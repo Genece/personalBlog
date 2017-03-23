@@ -1,0 +1,824 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #e9ebee;
+  font-size: 13px; }
+
+.nav {
+  height: 42px;
+  background: #3b5998;
+  position: fixed;
+  width: 100%;
+  z-index: 3; }
+
+.nav-bar, .container {
+  margin: 0 auto;
+  width: 1014px;
+  padding-top: 52px; }
+
+.menu {
+  width: 180px;
+  float: left;
+  font-size: 13px;
+  color: #1d2129;
+  position: fixed; }
+
+.content {
+  margin-left: 191px;
+  min-height: 600px; }
+
+.main {
+  width: 502px;
+  float: left; }
+
+.bottom, .top {
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  position: relative; }
+
+.promotion {
+  width: 310px;
+  margin-left: 510px;
+  position: fixed; }
+
+.promotion, .main {
+  height: calc(100% - 52px); }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+a {
+  -webkit-appearance: none;
+  text-decoration: none;
+  color: #1d2129; }
+
+i {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  background: darkblue; }
+
+#menu a {
+  display: block;
+  position: relative;
+  height: 30px;
+  padding-left: 28px;
+  line-height: 28px;
+  border: 1px solid #e9ebee;
+  border-radius: 2px;
+  box-sizing: border-box;
+  margin-left: -4px; }
+
+h4 {
+  font-size: 12px;
+  margin: 14px 0 4px 0; }
+
+#create a.li {
+  display: inline-block;
+  color: #3b5998; }
+
+.top {
+  box-sizing: border-box;
+  background: white;
+  padding: 12px; }
+
+h3 {
+  font-size: 14px;
+  line-height: 13px;
+  color: #90949c;
+  font-weight: 400;
+  margin: 0 0 12px 0; }
+  h3 span:last-child {
+    float: right;
+    color: #4267b2; }
+
+.picBox .img {
+  width: 139px;
+  height: 80px;
+  display: inline-block;
+  vertical-align: top;
+  background: url("http://kashow.oss-cn-shanghai.aliyuncs.com/facebook/16938691_10158445475755601_7863467231762319983_n.png") center center/cover no-repeat; }
+  .picBox .img:nth-child(odd) {
+    margin-bottom: 5px; }
+
+.zan {
+  border: 1px solid;
+  border-radius: 2px;
+  box-sizing: content-box;
+  font-size: 13px;
+  -webkit-font-smoothing: antialiased;
+  font-weight: bold;
+  padding: 0 0 0 10px;
+  position: relative;
+  text-align: center;
+  text-shadow: none;
+  vertical-align: middle;
+  width: 72px;
+  height: 25px;
+  background-color: #f6f7f9;
+  border-color: #ced0d4;
+  color: #4b4f56;
+  transition: 200ms cubic-bezier(0.08, 0.52, 0.52, 1) background-color, 200ms cubic-bezier(0.08, 0.52, 0.52, 1) box-shadow, 200ms cubic-bezier(0.08, 0.52, 0.52, 1) transform;
+  margin: 4px 0  14px 0; }
+  .zan i {
+    width: 12px;
+    height: 13px;
+    top: 6px;
+    left: 8px;
+    background: url("http://kashow.oss-cn-shanghai.aliyuncs.com/facebook/k1Sq1OQlw7T.png") 0 -42px/auto no-repeat; }
+
+.des {
+  color: #90949c;
+  font-size: 13px; }
+
+.name, .reply-user {
+  color: #3b5998;
+  font-size: 12px;
+  font-weight: bold; }
+
+.bottom {
+  margin-top: 10px;
+  background: white;
+  padding: 12px; }
+
+.language {
+  font-size: 13px;
+  width: 238px; }
+  .language span {
+    font-family: inherit;
+    color: #365899; }
+
+span.active {
+  color: #90949c; }
+
+.coperight {
+  padding: 12px;
+  color: #90949c; }
+
+p {
+  margin: 0;
+  padding: 0 12px; }
+
+.coperight a, p {
+  color: #90949c; }
+
+.public {
+  height: 156px;
+  background: white;
+  border: 1px solid #dddfe2;
+  border-radius: 2px; }
+
+.editBar {
+  padding: 8px 12px;
+  background: #f6f7f9;
+  border-bottom: 1px solid #dddfe2; }
+
+em {
+  font-style: normal; }
+
+.textBox {
+  height: 71px; }
+
+.textBox, textarea {
+  box-sizing: border-box;
+  padding: 12px 12px 0 52px; }
+
+textarea {
+  resize: none;
+  border: none;
+  height: 100%;
+  padding: 12px 48px 13px 12px;
+  font-size: 16px;
+  outline: none;
+  width: 100%; }
+
+.aditeMune, .btnRow {
+  padding: 9px 0;
+  margin: 0 12px;
+  border-top: 1px solid #dddfe2; }
+
+.btnRow {
+  border: none;
+  padding-top: 0; }
+
+.aditeMune span, .btnRow span {
+  font-weight: bold;
+  position: relative;
+  display: inline-block;
+  height: 32px;
+  width: 106px;
+  border-radius: 20px;
+  background: #f6f7f9;
+  text-align: center;
+  line-height: 32px;
+  box-sizing: border-box;
+  padding-left: 24px;
+  margin-right: 6px; }
+  .aditeMune span:hover, .btnRow span:hover {
+    background: #dddfe2; }
+.aditeMune i, .btnRow i {
+  left: 9px;
+  top: 7px;
+  background: url("http://oss.kashowvr.com/facebook/BO2nST9e5oa.png") 0 -109px/auto no-repeat; }
+.aditeMune .photoBtn, .btnRow .photoBtn {
+  background-position: 0 -214px; }
+
+img.avatar {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 12px;
+  top: 12px; }
+
+.textBox {
+  position: relative; }
+
+.item {
+  box-sizing: border-box;
+  padding: 12px 12px 0  12px; }
+
+.info {
+  position: relative;
+  padding-left: 52px; }
+  .info img.avatar {
+    top: 0;
+    left: 0; }
+  .info * {
+    display: block; }
+  .info span.user {
+    color: #365899; }
+
+time, .item-btn span {
+  color: #90949c; }
+
+.reply-box {
+  padding: 0 12px;
+  background: #f6f7f9; }
+
+.hadZan {
+  color: #3b5998;
+  font-weight: bold;
+  padding: 12px 0;
+  border-bottom: 1px solid #dddfe2; }
+
+.item-content {
+  padding: 11px 0;
+  font-size: 30px; }
+
+.item-btn {
+  padding: 6px 0;
+  border-top: 1px solid #dddfe2; }
+
+.item-btn span {
+  margin-right: 20px; }
+
+.item {
+  background: white; }
+
+.box {
+  margin-top: 10px; }
+
+.relpy {
+  position: relative;
+  padding: 12px 0 0 44px; }
+
+img.relpy-avatar {
+  width: 32px;
+  height: 32px;
+  left: 0;
+  top: 12px; }
+
+.reply-info input {
+  height: 32px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  border: 1px solid #dddfe2;
+  width: 100%; }
+
+.reply-box p {
+  padding: 6px 0 6px 44px; }
+
+.nav {
+  height: 42px;
+  background: #3b5998; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+.nav-bar {
+  width: 1012px;
+  margin: 0 auto;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 7px 0; }
+
+.nav-bar * {
+  display: inline-block; }
+
+.logo-box {
+  width: 592px; }
+
+ul {
+  list-style: none; }
+
+.logo {
+  width: 24px;
+  height: 26px;
+  vertical-align: sub;
+  margin-right: 7px;
+  background: url("http://oss.kashowvr.com/facebook/Jftl1p8_S0m.png") 0 -13px/27px no-repeat; }
+
+.search-btn {
+  background: url("http://oss.kashowvr.com/facebook/Jftl1p8_S0m.png") 0 -713px/auto no-repeat; }
+
+.search-box input {
+  outline: none;
+  border: none;
+  border-radius: 2px;
+  height: 24px;
+  vertical-align: super;
+  width: 440px;
+  padding-left: 10px;
+  font-size: 16px; }
+
+.search-box {
+  position: relative; }
+
+.search-btn {
+  position: absolute;
+  width: 46px;
+  height: 24px;
+  right: 0;
+  top: 0;
+  background: #f6f7f9; }
+
+img.small-avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 2px;
+  margin: 0 6px 0 0; }
+
+.operation-box {
+  height: 100%;
+  color: white;
+  font-size: 13px;
+  width: 410px; }
+
+.operation-box span {
+  vertical-align: super;
+  padding: 0 10px; }
+
+span.userName {
+  padding: 0 10px 0 0;
+  border-right: 1px solid rgba(0, 0, 0, 0.1); }
+
+ul#icon-bar {
+  padding: 0 10px 0 20px;
+  margin: 0;
+  vertical-align: top; }
+
+ul#icon-bar li {
+  width: 42px;
+  height: 100%; }
+
+.question {
+  width: 33px;
+  height: 100%;
+  float: right; }
+
+b {
+  padding: 14px 16px 0 0;
+  background: url("http://oss.kashowvr.com/facebook/Jftl1p8_S0m.png") 0 -713px/auto no-repeat;
+  position: absolute;
+  top: 5px;
+  right: 13px; }
+
+ul#icon-bar li, .question .arrow, i#question {
+  width: 27px;
+  height: 27px;
+  background: url("http://oss.kashowvr.com/facebook/Jftl1p8_S0m.png") 0 -38px/auto no-repeat;
+  opacity: .6; }
+
+.question {
+  position: relative; }
+
+ul#icon-bar li.message {
+  background-position: 0 -288px; }
+
+ul#icon-bar li.inform {
+  background-position: 0 -88px; }
+
+.question .arrow {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  background-position: 0 -645px;
+  display: block;
+  right: -10px;
+  top: 50%;
+  margin-top: -8px; }
+
+ul#icon-bar a {
+  width: 33px; }
+
+i#question {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-position: 0 -397px;
+  margin: 2px auto;
+  top: 1px; }
+
+ul#avatar-menu li {
+  height: 28px;
+  line-height: 28px;
+  padding-left: 28px;
+  position: relative;
+  border: 1px solid #e9ebee;
+  box-sizing: border-box;
+  margin-left: -4px; }
+  ul#avatar-menu li i, ul#avatar-menu li img {
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 4px;
+    top: 3px; }
+
+#avatar-menu i, #menu i {
+  background: url("http://oss.kashowvr.com/facebook/BO2nST9e5oa.png") 0 -697px/auto no-repeat; }
+
+.editBar span {
+  padding: 0 10px 0 20px;
+  position: relative;
+  color: #365899;
+  font-weight: bold; }
+
+.editBar i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background: url("http://oss.kashowvr.com/facebook/W1WPGWfUi2i.png") -17px -226px/auto no-repeat; }
+
+.ft {
+  border-right: 1px solid #ced0d4; }
+
+.photo {
+  margin-left: 10px; }
+
+.item-btn span {
+  padding-left: 20px;
+  position: relative; }
+  .item-btn span:before {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 3px;
+    background: url("http://oss.kashowvr.com/facebook/XCo5TG2p5Ea.png") -34px -356px/auto no-repeat; }
+
+.item-btn span.comment:before {
+  background-position: -34px -341px; }
+
+.item-btn span.share:before {
+  background-position: -15px -409px; }
+
+.user {
+  font-size: 15px;
+  font-weight: bold; }
+
+.hadZan span {
+  padding-left: 20px;
+  position: relative; }
+
+.hadZan span:before {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  background: url("http://oss.kashowvr.com/facebook/rkAZGJ9hFpo.png") -17px -64px/auto no-repeat; }
+
+.reply-user {
+  font-size: 13px; }
+
+.reply-zan {
+  color: #365899; }
+
+.addBtn {
+  width: 34px;
+  height: 28px;
+  background-color: #f6f7f9;
+  color: #4b4f56;
+  border: 1px solid  #ced0d4;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  border-radius: 2px; }
+  .addBtn .addicon {
+    position: relative; }
+    .addBtn .addicon:after {
+      left: 50%;
+      margin-left: -6px;
+      top: 8px;
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      display: inline-block;
+      content: '';
+      background: url("http://oss.kashowvr.com/facebook/rkAZGJ9hFpo.png") -121px -95px/auto no-repeat; }
+
+.inform-small {
+  margin: -1px 0;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background: url("http://oss.kashowvr.com/facebook/0WQoUrIGYJv.png") -15px -516px/auto no-repeat; }
+
+.photo-icon,
+.emoji {
+  width: 14px;
+  height: 32px;
+  padding: 10px 12px;
+  position: absolute; }
+
+.reply-info {
+  position: relative; }
+
+.emoji {
+  right: 0;
+  top: 0; }
+
+.photo-icon {
+  right: 26px;
+  top: 0; }
+
+.emoji:after, .photo-icon:after {
+  position: absolute;
+  left: 12px;
+  height: 14px;
+  width: 14px;
+  content: '';
+  right: 0;
+  background: url("http://oss.kashowvr.com/facebook/W1WPGWfUi2i.png") -6px -204px/auto no-repeat; }
+
+.photo-icon:after {
+  width: 15px;
+  height: 12px;
+  background: url("http://oss.kashowvr.com/facebook/kzn7s75He1c.png") 0 -119px/auto no-repeat; }
+
+#menu a.folder {
+  color: #3b5998;
+  padding-left: 5px; }
+
+.folder:before {
+  margin: 0px 9px -3px 0;
+  content: '';
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background: url("http://oss.kashowvr.com/facebook/W1WPGWfUi2i.png") -34px -226px/auto no-repeat; }
+
+.mask {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  left: 0;
+  top: 0; }
+
+.public {
+  position: relative; }
+
+.public-inner {
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  background: white;
+  border-radius: 2px; }
+
+@keyframes heightAni {
+  0% {
+    height: 71px; }
+  100% {
+    height: 107px; } }
+.animate {
+  font-size: 25px;
+  transition: font-size .2s ease-in; }
+
+.hasOpen {
+  width: calc((100% - 12px) / 2) !important;
+  text-align: left !important;
+  padding-left: 32px !important; }
+
+i.sign {
+  background-position: 0 -172px; }
+
+i.friend {
+  background-position: 0 -256px; }
+
+.publicbtn {
+  height: 40px;
+  border-top: 1px solid #ced0d4;
+  background: #f6f7f9; }
+
+.float-r {
+  height: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  float: right; }
+  .float-r button {
+    height: 25px;
+    width: 60px;
+    color: white;
+    background: #3b5998;
+    border: none;
+    outline: none;
+    border-radius: 2px; }
+
+button.anncounce {
+  margin-right: 10px;
+  background: #f6f7f9;
+  color: #1d2129;
+  border: 1px solid #e9ebee;
+  transition: 200ms cubic-bezier(0.08, 0.52, 0.52, 1) background-color, 200ms cubic-bezier(0.08, 0.52, 0.52, 1) box-shadow, 200ms cubic-bezier(0.08, 0.52, 0.52, 1) transform; }
+  button.anncounce:before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: -3px 5px  -3px 0;
+    background: url("http://oss.kashowvr.com/facebook/FcWlgvgl4BJ.png") 0 -91px/auto no-repeat; }
+
+.mask-show {
+  display: none; }
+
+.closeBtn {
+  width: 20px;
+  height: 20px;
+  background: url("http://oss.kashowvr.com/facebook/kzn7s75He1c.png") 0 -207px/auto no-repeat;
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  display: none; }
+
+.editBar {
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px; }
+
+.publicbtn {
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px; }
+
+.rb {
+  border-right: 1px solid rgba(0, 0, 0, 0.1); }
+
+.wrapper {
+  margin-right: 310px; }
+
+.item-box {
+  margin-bottom: 10px; }
+
+#menu a:hover, #avatar-menu li:hover {
+  background: #f6f7f9;
+  border: 1px solid #dddfe2;
+  width: 184px;
+  cursor: pointer; }
+
+#search-list::-webkit-scrollbar {
+  display: none; }
+
+#search-list {
+  height: 390px;
+  width: 450px;
+  background: white;
+  border-radius: 2px;
+  border: 1px solid;
+  border-color: #333333 #333 #293e6a;
+  overflow-y: scroll;
+  position: absolute;
+  left: 0;
+  top: 26px;
+  display: none; }
+  #search-list li {
+    min-height: 50px;
+    display: block;
+    padding: 3px 30px 3px 63px;
+    position: relative; }
+    #search-list li:hover {
+      background: #3b5998;
+      cursor: pointer; }
+      #search-list li:hover .tag, #search-list li:hover .search-name {
+        color: white !important; }
+  #search-list img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 6px; }
+  #search-list .search-name {
+    color: #3b5998;
+    font-weight: bold; }
+  #search-list .tag {
+    color: #90949c; }
+  #search-list .search-name, #search-list .tag {
+    display: block; }
+
+#search-list p {
+  background: #f6f7f9;
+  color: #1d2129;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 3px 6px;
+  font-weight: bold; }
+  #search-list p span {
+    float: right;
+    color: #3b5998; }
+
+.dropdown {
+  width: 170px;
+  background: white;
+  box-sizing: border-box;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+  padding: 5px 0;
+  position: absolute;
+  top: 33px;
+  right: -25px;
+  display: none; }
+  .dropdown ul {
+    width: 100%;
+    position: relative; }
+    .dropdown ul::after {
+      content: '';
+      border-color: transparent transparent white transparent;
+      border-width: 8px;
+      display: block;
+      height: 0;
+      width: 0;
+      border-style: solid;
+      position: absolute;
+      top: -21px;
+      right: 14px; }
+  .dropdown li {
+    display: block;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 22px;
+    color: #1d2129; }
+    .dropdown li:hover {
+      background: #3b5998;
+      color: white;
+      cursor: pointer;
+      opacity: 1 !important; }
+  .dropdown .line {
+    height: 0;
+    margin: 5px 7px 6px;
+    border-bottom: 1px solid #ced0d4; }
+
+em:hover {
+  cursor: pointer; }
+
+.operation-box u {
+  padding: 3px  0; }
+  .operation-box u:hover {
+    border-radius: 2px;
+    background: rgba(0, 0, 0, 0.1);
+    cursor: pointer; }
+
+#icon-bar li:hover {
+  cursor: pointer;
+  opacity: .9; }
+
+.question:hover {
+  cursor: pointer; }
+
+a:hover, span:hover, button:hover {
+  cursor: pointer;
+  opacity: .9; }
+
+span.ignore {
+  width: 50px;
+  border-radius: 20px;
+  color: #f6f7f9; }
+  span.ignore:hover {
+    color: #dddfe2; }
+  span.ignore i {
+    left: 15px;
+    background: url("http://oss.kashowvr.com/facebook/BO2nST9e5oa.png") 0 -151px/auto no-repeat; }
+
+/*# sourceMappingURL=facebook.css.map */
