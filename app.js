@@ -18,7 +18,7 @@ pug.locals.someKey = 'some value'
 
 app.use(koaStatic({rootDir: path.join(__dirname, "/public"), rootPath: '/public'}));
 
-router.get('/index', function *(next) {
+router.get('/', function *(next) {
   this.render('index',{title:'首页'});
 });
 
