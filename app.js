@@ -42,7 +42,7 @@ app
   .use(router.routes())
   .use(router.allowedMethods());
 
-http.createServer(app.callback()).listen(8080);
+http.createServer(app.callback()).listen(80);
 
 
 // var koaStatic = require('koa-static-server');
