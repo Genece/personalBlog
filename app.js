@@ -30,6 +30,10 @@ router.get('/second', function *(next) {
   this.render('second',{title:'第二篇'});
 });
 
+router.get('/third', function *(next) {
+  this.render('third',{title:'第三篇'});
+});
+
 router.get('/typescript', function *(next) {
   this.render('typescript',{title:'ts'});
 });
