@@ -16,7 +16,7 @@ const pug = new Pug({
 })
 pug.locals.someKey = 'some value'
 
-app.use(koaStatic({rootDir: path.join(__dirname, "/public"), rootPath: '/public'}));
+app.use(koaStatic({rootDir: path.join(__dirname, "public"), rootPath: '/public'}));
 
 router.get('/', function *(next) {
   this.render('index',{title:'首页'});
@@ -42,7 +42,7 @@ app
   .use(router.routes())
   .use(router.allowedMethods());
 
-http.createServer(app.callback()).listen(80);
+http.createServer(app.callback()).listen(8080);
 
 
 // var koaStatic = require('koa-static-server');
