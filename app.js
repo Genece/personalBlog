@@ -34,6 +34,10 @@ router.get('/third', function *(next) {
   this.render('third',{title:'第三篇'});
 });
 
+router.get('/fourth', function *(next) {
+  this.render('fourth',{title:'第四篇'});
+});
+
 router.get('/typescript', function *(next) {
   this.render('typescript',{title:'ts'});
 });
