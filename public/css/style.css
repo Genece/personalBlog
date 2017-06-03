@@ -18,7 +18,7 @@ ul{
     position: absolute;
     width: 200px;
     height: 200px;
-    background: url('../image/logo.png') center center/cover no-repeat;
+    background: url('./image/logo.png') center center/cover no-repeat;
     top: 52px;
     right: -100px;
     margin-left: -69px;
@@ -247,7 +247,7 @@ section ul{
     width: 1350px;
     height: 100%;
     margin: 0 auto;
-    background: url('../image/advance.png') center center/cover no-repeat;
+    background: url('./image/advance.png') center center/cover no-repeat;
 }
 .second-advance{
     height: 550px;
@@ -256,7 +256,7 @@ section ul{
     font-size: 14px;
     color: white;
     /*background: url('./image/second-advance.png') center center fixed/cover no-repeat;*/
-    background-image:url(../image/second-advance.png);
+    background-image:url(./image/second-advance.png); 
     background-repeat:no-repeat; 
     background-attachment:fixed;
     background-size: cover;
@@ -315,7 +315,7 @@ section ul{
     text-align: justify;
     position: absolute;
     top: 27px;
-    left: 100px;
+    left: 0;
 }
 .next-content img{
     position: absolute;
@@ -330,7 +330,7 @@ section ul{
     padding: 74px 20px;
     line-height: 2.5;
         position: absolute;
-    right: -10px;
+    right: 90px;
     top: 485px;
     z-index: 1;
 }
@@ -342,7 +342,7 @@ section ul{
     padding: 81px 25px 39px 78px;
     position: absolute;
     top: 820px;
-    right: 145px;
+    right: 200px;
     left: auto;
     background: white
 }
@@ -383,7 +383,7 @@ section ul{
 .fifth-screen .right{
      width: 60%;
      min-width: 720px;
-     background: url(../image/bg-phone.png) center center/cover no-repeat;
+     background: url(./image/bg-phone.png) center center/cover no-repeat;
 }
 .phone-desc{
     width: 580px;
@@ -502,6 +502,6 @@ box-sizing: border-box;}
     top: 36px;
     z-index: 1;
     min-width: 1200px;
-    background: url('../image/peoplebg.png') center center/cover no-repeat;
+    background: url('./image/peoplebg.png') center center/cover no-repeat;
 
 }
