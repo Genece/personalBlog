@@ -843,6 +843,8 @@ line-height: 2;
     height: 100%;
     padding: 44px 37px 0;
     box-sizing: border-box;
+    left:0;
+    top:0;
 }
 .phone-qrcode{
     width: 210px;
