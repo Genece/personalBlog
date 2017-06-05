@@ -19,7 +19,7 @@ ul{
     position: absolute;
     width: 200px;
     height: 200px;
-    background: url('./image/logo.png') center center/cover no-repeat;
+    background: url('../image/logo.png') center center/cover no-repeat;
     top: 52px;
     right: -100px;
     margin-left: -69px;
@@ -248,7 +248,7 @@ section ul{
     width: 1350px;
     height: 100%;
     margin: 0 auto;
-    background: url('./image/advance.png') center center/cover no-repeat;
+    background: url('../image/advance.png') center center/cover no-repeat;
 }
 .second-advance{
     height: 550px;
@@ -256,8 +256,8 @@ section ul{
     text-align: center;
     font-size: 14px;
     color: white;
-    /*background: url('./image/second-advance.png') center center fixed/cover no-repeat;*/
-    background-image:url(./image/second-advance.png); 
+    /*background: url('../image/second-advance.png') center center fixed/cover no-repeat;*/
+    background-image:url(../image/second-advance.png); 
     background-repeat:no-repeat; 
     background-attachment:fixed;
     background-size: cover;
@@ -384,7 +384,7 @@ section ul{
 .fifth-screen .right{
      width: 60%;
      min-width: 720px;
-     background: url(./image/bg-phone.png) center center/cover no-repeat;
+     background: url(../image/bg-phone.png) center center/cover no-repeat;
 }
 .phone-desc{
     width: 580px;
@@ -503,7 +503,7 @@ box-sizing: border-box;}
     top: 36px;
     z-index: 1;
     min-width: 1200px;
-    background: url('./image/peoplebg.png') center center/cover no-repeat;
+    background: url('../image/peoplebg.png') center center/cover no-repeat;
 
 }
 @media screen and (max-width:640px){
@@ -641,7 +641,7 @@ box-sizing: border-box;}
     position: absolute;
     right: -12.5px;
     top: -12.5px;
-    background: url('./image/circle.png') center center/cover no-repeat
+    background: url('../image/circle.png') center center/cover no-repeat
 }
 .phone-key::after{
     top: auto;
@@ -704,7 +704,7 @@ line-height: 2;
 }
 .phone-advance{
     height: 70px;
-    background: url('./image/advance.png') center center/cover no-repeat;
+    background: url('../image/advance.png') center center/cover no-repeat;
 }
 .phone-3{
     padding: 0 20px;
@@ -757,7 +757,7 @@ line-height: 2;
     top: -15px;
     color: white;
     padding:30px 0;
-    background: url('./image/second-advance.png') center center/cover no-repeat;
+    background: url('../image/second-advance.png') center center/cover no-repeat;
 }
 .second-advance-desc{
     background: transparent;
