@@ -2,6 +2,7 @@ body,ul{
     margin: 0;
     padding: 0;
     color: #333;
+    width:100%;
 }
 ul{
     list-style: none;
@@ -504,4 +505,355 @@ box-sizing: border-box;}
     min-width: 1200px;
     background: url('./image/peoplebg.png') center center/cover no-repeat;
 
+}
+@media screen and (max-width:640px){
+    body{
+        min-width:320px;
+        max-width: 640px;
+        margin: 0 auto;
+    }
+    #pc{
+        display: none;
+    }
+    #mobile{
+        display: block;
+    }
+}
+@media screen and (min-width:640px){
+    #pc{
+        display: block;
+    }
+    #mobile{
+        display: none;
+    }
+}
+.phone-1{
+    width: 100%;
+     display: flex;
+    display: -webkit-flex;
+    position: relative;
+}
+.phone-1 .col{
+   flex: 1;
+   -webkit-flex:1;
+    height:800px;
+    background: #f7b518;
+}
+.phone-1 .black{
+    background: #37353d;
+}
+.phone-content{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    text-align: center;
+    letter-spacing: 0.075em;
+}
+.phone-content h2 span{
+    font-size: 25px;
+    color: #37353d;
+}
+.phone-content h2 {
+    font-size: 20px;
+    color: white;
+}
+.phone-content img{
+    display: block;
+    margin: 0 auto;
+}
+.title-box{
+    display: inline-block;
+    margin: 0 auto;
+}
+.title-box h2{
+    margin-top: 10px;
+}
+.title-box .border{
+    width: 16px;
+    height: 4px;
+    margin: 8px 0 32px 15px;
+}
+.mobile-desc{
+    color: white;
+    display: block;
+    font-size: 12px;
+    text-align: left;
+}
+.mobile-desc p{
+    margin: 5px 0;
+}
+.mobile-desc span{
+    color: #f75209;
+}
+.phone-desc-1{
+    margin: 30px  13px 50px ;
+    font-size: 12px;
+    color: white;
+    padding: 27px 8px 60px;
+    text-align: justify;
+    border: 2px solid #f7b518;
+}
+.phone-desc-1 span{
+    font-size: 18px;
+}
+.phone-desc-1 h4{
+    color: #f5473e;
+    position: relative;
+    font-size: 12px;
+    text-align: center;
+    margin: 20px 0 15px 0;
+}
+.phone-bottom{
+    border: 3px solid #37353d;
+    padding:40px 8px 27px;
+    position: relative;
+}
+.phone-bottom img{
+    position: absolute;
+        top: -110px;
+    left: 50%;
+    margin-left: -105px;
+}
+.phone-key{
+    height: 80px;
+    width: 50%;
+    position: absolute;
+    bottom: 0;
+    line-height: 85px;
+    color: #f5473e;
+    text-align: right;
+    font-size: 12px;
+}
+.phone-key div{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.phone-key span{
+    font-size: 19px;
+}
+.phone-key::before,.phone-key::after{
+    content: '';
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: -12.5px;
+    top: -12.5px;
+    background: url('./image/circle.png') center center/cover no-repeat
+}
+.phone-key::after{
+    top: auto;
+    bottom: -12.5px;
+}
+.phone-2{
+    padding: 6px 20px;
+    font-size: 12px;
+}
+.phone-2 p {
+    margin: 0;
+    padding:25px 0 20px 0;
+}
+.phone-2 p span{
+    color: #f7b518;
+}
+.phone-money-pic{
+    display: block;
+    margin: 0 auto;
+}
+.phone-maibao{
+    text-align: center;
+}
+h5{
+    margin: 0;
+    line-height: 2;
+}
+.phone-maibao p{
+padding: 0;
+line-height: 2; 
+}
+.phone-money-desc-pic{
+   width: 100%;
+   margin: 26px 0 50px 0;
+}
+.phone-2 .phone-yellow-words{
+    color: #f7b518;
+    text-indent: 1em;
+    padding: 25px 15px 20px;
+    text-align: justify;
+    line-height: 2;
+}
+.phone-icon{
+    width: 50%;
+    /*flex: 1;*/
+    text-align: justify;
+    padding: 30px 25px 40px;
+    box-sizing: border-box;
+    text-indent: 1em;
+    line-height: 2;
+}
+.phone-icon-box{
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap:wrap;
+}
+.phone-icon img{
+    margin: 0 auto 25px;
+    display: block;
+}
+.phone-advance{
+    height: 70px;
+    background: url('./image/advance.png') center center/cover no-repeat;
+}
+.phone-3{
+    padding: 0 20px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 2;
+}
+.phone-3-desc-pic{
+    width: 100%;
+    margin: 25px 0 0 0;
+}
+.phone-3-desc{
+    width: 100%;
+    margin: 25px 0 0 0;
+    box-sizing: border-box;
+    padding: 10px 8px 100px;
+    border: 1px solid #f7b518;
+    text-align: justify;
+    position: relative;
+}
+.phone-yellow{
+    text-align: center;
+    color: white;
+    background: #f7b518;
+    width: 300px;
+    padding: 37px 0;
+    margin-left: -150px;
+    top: -185px;
+}
+.phone-3-desc img,.phone-yellow{
+    position: absolute;
+    left: 50%;
+
+}
+.phone-3-desc img{
+    margin-left: -130px;
+    z-index: 1;
+}
+.phone-3-bottom-desc{
+    padding: 65px 8px 60px;
+    z-index: 1;
+    background: white;
+}
+.phone-advance-2,.second-advance-desc{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: -15px;
+    color: white;
+    padding:30px 0;
+    background: url('./image/second-advance.png') center center/cover no-repeat;
+}
+.second-advance-desc{
+    background: transparent;
+    z-index: 2;
+}
+.second-advance-desc p{
+    margin: 0;
+    padding: 0 20px;
+    font-size: 12px;
+    line-height: 2;
+}
+.phone-advance-2-wrapper{
+    position: relative;
+    width: 100%;
+    height: 450px;
+    box-sizing: border-box;
+    padding: 30px 0;
+}
+.phone-advance-2-wrapper img{
+    width: 175px;
+    position: absolute;
+    z-index: 1;
+    right: 40px;
+    top: -45px;
+}
+.phone-map{
+    width: 100%;
+}
+.phone-money{
+    width: 190px;
+}
+.phone-4{
+    padding: 0 20px;
+    font-size: 12px;
+    line-height: 2;
+}
+.phone-4 h5{
+    font-size: 15px;
+}
+.phone-4 p{
+    margin: 0;
+}
+.phone-phone{
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+}
+.phone-book{
+    border: 1px solid #f7b518;
+    padding: 74px 12px 30px;
+    position: relative;
+    margin-top: 250px;
+}
+.phone-book img{
+    position: absolute;
+    top: -220px;
+    left: 50%;
+    margin-left: -105px;
+}
+.phone-people{
+    width: 100%;
+    margin-top: 15px;
+}
+.phone-5{
+    width: 100%;
+    height: 650px;
+    display: flex;
+    display: -webkit-flex;
+    position: relative;
+}
+.phone-5-flex{
+    flex: 1;
+    -webkit-flex: 1;
+    height: 100%;
+    background: #f7b518;
+}
+.phone-5-desc{
+    position: absolute;
+    color: white;
+    font-size: 12px;
+    line-height: 2;
+    width: 100%;
+    height: 100%;
+    padding: 44px 37px 0;
+    box-sizing: border-box;
+}
+.phone-qrcode{
+    width: 210px;
+    height: 210px;
+    background: white;
+    margin: 40px auto 0;
+    box-sizing: border-box;
+    padding: 25px;
+}
+.phone-tip{
+    width: 210px;
+    margin: 20px auto;
+    text-align: right;
 }
