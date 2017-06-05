@@ -19,7 +19,7 @@ ul{
     position: absolute;
     width: 200px;
     height: 200px;
-    background: url('../image/logo.png') center center/cover no-repeat;
+    /*background: url('../image/logo.png') center center/cover no-repeat;*/
     top: 52px;
     right: -100px;
     margin-left: -69px;
