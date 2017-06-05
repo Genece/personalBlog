@@ -26,6 +26,9 @@ ul{
 }
 .banner .flex-box{
     flex: 1;
+    width: 50%\9;
+    display: inline-block\9;
+    float: left\9;
     height: 100%;
     min-width:600px;
 } 
@@ -88,6 +91,9 @@ header{
 }
 header .flex-box{
     flex: 1;
+    width:50%\9;
+    display: inline-block\9;
+    float: left\9;
     height: 100%;
     min-width:600px;
     position: relative;
@@ -222,6 +228,9 @@ section ul{
 }
 .circle div{
     flex: 1;
+    display: inline-block\9;
+    float: left\9;
+    width:50%\9;
     text-align: justify;
     font-size: 14px;
     color: #333;
@@ -301,6 +310,9 @@ section ul{
 }
 .part-1 .flex{
     flex: 1;
+    width: 50%\9;
+    display: inline-block\9;
+    float: left\9;
     min-width: 600px;
     position: relative;
 }
@@ -459,6 +471,9 @@ footer{
 }
 footer .flex{
     flex: 1;
+    width: 50%\9;
+    display: inline-block\9;
+    float: left\9;
     min-width: 600px;
     position: relative;
 }
@@ -475,6 +490,9 @@ footer .flex{
 }
 .final,.qrimg{
     flex: 1;
+    width: 50%\9;
+    display: inline-block\9;
+    float: left\9;
     font-size: 14px;
     line-height: 2;
 }
@@ -536,6 +554,9 @@ box-sizing: border-box;}
 .phone-1 .col{
    flex: 1;
    -webkit-flex:1;
+    width: 50%\9;
+    display: inline-block\9;
+    float: left\9;
     height:800px;
     background: #f7b518;
 }
